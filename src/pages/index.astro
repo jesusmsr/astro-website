@@ -1,13 +1,28 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Badge from "../components/Badge.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
-
 <Layout title="Welcome to Astro.">
-	<main>
-		<h1 class="text-white animate-blurred-fade-in">Jesús Sánchez</h1>
-	</main>
+  <main>
+    <section class="w-full mx-auto lg:w-[740px] py-44">
+      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+        Hola👋 soy Jesús
+        <a
+          class="flex justify-center items-center"
+          href="https://www.linkedin.com/in/jesus-sanchez-213a5a210/"
+          ><Badge>Open to work</Badge></a
+        >
+      </h1>
+      <h2 class="text-xl opacity-80">
+        4 años de experiencia. Desarrollador web en <span
+          class="text-red-200/100">Angular</span
+        > y empezando desarrollo en Android/IOS con <span
+          class="text-blue-200/90">Flutter</span
+        >. De Albacete, España.
+      </h2>
+    </section>
+  </main>
 </Layout>
 
-<style>
-</style>
+<style></style>
